@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Milkah Ng'ang'a - Web Developer</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<script src="assets/js/java.js"></script>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Milkah Ng'ang'a </h1>
+                <p>Web Developer</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello, I'm Milkah Ng'ang'a, a passionate and detail-oriented web developer with a keen eye for creating functional and visually appealing web applications.
+                With experience in a variety of programming languages and frameworks, I specialize in both front-end and back-end development,
+                ensuring that every project I work on is optimized for performance, user experience, and scalability. Over the years,
+                I have honed my skills in languages like HTML, CSS, JavaScript, and PHP, as well as back-end technologies
+                such as Python and Django. I also have strong expertise in SQL for database management
+                and a deep understanding of Java for building enterprise-level applications.
+                Whether it's building a simple, responsive landing page or developing complex web applications,
+                my goal is always to craft clean, maintainable code that meets both user and business needs.
+                I believe in continuously learning and adapting to new technologies and best practices,
+                ensuring that I can provide innovative solutions to the challenges of modern web development.
+                I am always looking for new opportunities to collaborate and grow, and
+                I am excited to bring my skills to your next project!</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+   <section id="skills">
+    <div class="container">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skills-left">
+                <ul>
+                    <li><span class="line"></span>HTML</li>
+                    <li><span class="line"></span>CSS</li>
+                    <li><span class="line"></span>PHP</li>
+                    <li><span class="line"></span>BOOTSTRAP</li>
+                </ul>
+            </div>
+            <div class="vertical-line"></div> <!-- Vertical Line -->
+            <div class="skills-right">
+                <ul>
+                    <li><span class="line"></span>PYTHON</li>
+                    <li><span class="line"></span>DJANGO</li>
+                    <li><span class="line"></span>MYSQL</li>
+                    <li><span class="line"></span>JAVASCRIPT</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- end skill section-->
+
+<!--project section-->
+    <section id="projects">
+    <div class="container">
+        <h2>My Projects</h2>
+        <div class="project-carousel">
+            <!-- Slideshow container -->
+            <div class="carousel">
+                <!-- Slides -->
+                <div class="carousel-slide">
+                    <img src="assets/images/img.jpeg" alt="Project 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/images/img%20(1).jpeg" alt="Project 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/images/project%202.png" alt="Project 3">
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/images/project%202.2.png" alt="Project 4">
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+            <!-- Navigation Buttons -->
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>If you'd like to work with me or have any questions, feel free to reach out!</p>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Milkah. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,292 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    background-color: #171617;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #243446; /* Dark Blue */
+    color: #FF6F00; /* Bold Orange */
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #FF6F00;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: #FF6F00;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #FFFFFF; /* White on hover */
+    text-decoration: underline;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 0;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: #b2250d; /* Dark Blue */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+/*skills section*/
+#skills {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #8193a8;
+}
+
+#skills h2 {
+    font-size: 2.5rem;
+    color: #ea6219;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+/* Skills Container with the Vertical Line */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Vertical Line */
+.vertical-line {
+    width: 6px;
+    height: 400px;  /* Adjust the height as per your content */
+    background-color: #171617;  /* Orange color */
+    margin: 0 30px;
+}
+
+/* Left and Right Skills */
+.skills-left{
+     width: 45%;
+    text-align: left;
+    position: relative;
+}
+.skills-right {
+    width: 45%;
+    text-align: right;
+    position: relative;
+}
+
+.skills-left ul,
+.skills-right ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-left li{
+    font-size: 1.2rem;
+    margin: 50px 0;
+    color: #171617;
+    position: relative;
+}
+.skills-right li {
+    font-size: 1.2rem;
+    margin: 50px 0;
+    color: #171617;
+    position: relative;
+}
+
+.skills-left li:hover,
+.skills-right li:hover {
+    color: #FF6F00;  /* Highlight color on hover */
+}
+
+/* Line for each skill item */
+.skills-left li .line{
+    position: absolute;
+    left: +330px; /* Adjust the line start position */
+    top: 50%; /* Center the line vertically with the text */
+    width: 100px; /* Length of the line */
+    height: 4px;  /* Line thickness */
+    background-color: #ffeb05;  /* Line color */
+    direction: ltr;
+}
+.skills-right li .line {
+    position: absolute;
+    left: -30px; /* Adjust the line start position */
+    top: 50%; /* Center the line vertically with the text */
+    width: 100px; /* Length of the line */
+    height: 4px;  /* Line thickness */
+    background-color: #ffeb05;  /* Line color */
+    direction: rtl;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .vertical-line {
+        display: none; /* Hide the vertical line on smaller screens */
+    }
+
+    .skills-left,
+    .skills-right {
+        width: 100%;
+    }
+
+    /* Remove horizontal line on mobile for better clarity */
+    .skills-left li .line,
+    .skills-right li .line {
+        display: none;
+    }
+}
+
+
+
+/* Projects Section */
+#projects {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #f4f4f9;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    color: #1E2A38;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+/* Slideshow container */
+.project-carousel {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* The Carousel (Slides) */
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+/* Individual Slide */
+.carousel-slide {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/*!* Navigation Buttons *!*/
+/*button {*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    transform: translateY(-50%);*/
+/*    background-color: rgba(0, 0, 0, 0.5);*/
+/*    color: white;*/
+/*    border: none;*/
+/*    padding: 15px;*/
+/*    cursor: pointer;*/
+/*    font-size: 2rem;*/
+/*    z-index: 10;*/
+/*    border-radius: 50%;*/
+/*}*/
+
+/*button:hover {*/
+/*    background-color: rgba(0, 0, 0, 0.7);*/
+/*}*/
+
+/*.prev {*/
+/*    left: 10px;*/
+/*}*/
+
+/*.next {*/
+/*    right: 10px;*/
+/*}*/
+
+/*contact section*/
+form {
+    display:flex ;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+
+form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: medium;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #c83f1f;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #projects h2 {
+        font-size: 2rem;
+    }
+}
